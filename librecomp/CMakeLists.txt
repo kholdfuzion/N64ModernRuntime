@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.20)
 project(librecomp)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Define the library
@@ -47,7 +49,7 @@ target_include_directories(librecomp PRIVATE
 target_compile_options(librecomp PRIVATE
 #    -Wall
 #    -Wextra
-    -Wno-unused-parameter
+#    -Wno-unused-parameter
 )
 
 if (WIN32)

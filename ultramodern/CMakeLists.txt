@@ -32,7 +32,7 @@ target_include_directories(ultramodern PUBLIC
 target_compile_options(ultramodern PRIVATE
 #    -Wall
 #    -Wextra
-    -Wno-unused-parameter
+#    -Wno-unused-parameter
 )
 
 if (WIN32)
